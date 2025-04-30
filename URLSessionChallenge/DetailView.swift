@@ -45,14 +45,12 @@ struct DetailView: View {
 
 #Preview {
     DetailView(user: User(
-        name: "Zoltan",
+        id: "123456789", name: "Zoltan",
         isActive: true,
-        id: "123456789",
         age: 30,
         company: "Apple",
         email: "zoltan@apple.com",
         address: "35 High Street, London",
-        friends: [Friend(id: "1", name: "Daniel"), Friend(id: "2", name: "Virag")],
-        registered: Date() // <-- Pass a Date here
+        registered: Date(), friends: [Friend(id: "1", name: "Daniel"), Friend(id: "2", name: "Virag")] // <-- Pass a Date here
     ))
 }
