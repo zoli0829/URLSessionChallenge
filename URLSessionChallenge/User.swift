@@ -54,6 +54,7 @@ class User: Codable {
     
     func encode(to encoder: Encoder) throws {
             var container = encoder.container(keyedBy: CodingKeys.self)
+        
             try container.encode(id, forKey: .id)
             try container.encode(name, forKey: .name)
             try container.encode(isActive, forKey: .isActive)

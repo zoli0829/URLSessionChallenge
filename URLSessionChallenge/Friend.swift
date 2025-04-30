@@ -14,6 +14,7 @@ class Friend: Codable {
         case id
         case name
     }
+    
     var id: String
     var name: String
     
@@ -30,6 +31,7 @@ class Friend: Codable {
         
         func encode(to encoder: Encoder) throws {
             var container = encoder.container(keyedBy: CodingKeys.self)
+            
             try container.encode(id, forKey: .id)
             try container.encode(name, forKey: .name)
         }
